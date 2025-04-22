@@ -1,5 +1,8 @@
 import { BrowserRouter } from "react-router-dom";
+import { useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
+import { config } from "./constants/config";
 import {
   About,
   Contact,
@@ -11,13 +14,20 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
-import { useEffect } from "react";
-import { config } from "./constants/config";
 
 const App = () => {
   useEffect(() => {
+    // Set document title
     if (document.title !== config.html.title) {
       document.title = config.html.title;
+    }
+
+    // Initialize EmailJS with public key
+    const publicKey = import.meta.env.VITE_EMAIL_JS_ACCESS_TOKEN;
+    if (publicKey) {
+      emailjs.init(publicKey);
+    } else {
+      console.warn("EmailJS public key is missing in .env");
     }
   }, []);
 

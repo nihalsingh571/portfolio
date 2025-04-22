@@ -2,7 +2,7 @@ import type {
   TNavLink,
   TService,
   TTechnology,
-  TExperience,
+  TCertification,
   TTestimonial,
   TProject,
 } from "../types";
@@ -24,6 +24,9 @@ import {
   git,
   figma,
   docker,
+  cal,
+  shop,
+  ecom,
   meta,
   starbucks,
   tesla,
@@ -63,8 +66,8 @@ const services: TService[] = [
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "DevOps",
+    icon: docker,
   },
 ];
 
@@ -123,57 +126,35 @@ const technologies: TTechnology[] = [
   },
 ];
 
-const experiences: TExperience[] = [
+const certifications: TCertification[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Data Structure and Algorithms - Self-Paced (Java)",
+    provider: "GeeksforGeeks",
+    date: "September 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Mastered core data structures like arrays, linked lists, trees, graphs, stacks, and queues.",
+      "Implemented common algorithms such as sorting, searching, recursion, and hashing in Java.",
+      "Solved industry-standard problems and participated in coding contests to build problem-solving skills.",
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Cloud Computing",
+    provider: "NPTEL",
+    date: "November 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Understood fundamentals of cloud models: IaaS, PaaS, SaaS, and deployment types.",
+      "Explored virtualization, distributed storage, and cloud security practices.",
+      "Gained hands-on exposure to platforms like AWS and GCP through assignments and case studies.",
     ],
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Java Programming - The Complete Basic to Advance Java",
+    provider: "GeeksforGeeks",
+    date: "March 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built strong foundations in object-oriented programming concepts and Java syntax.",
+      "Worked on exception handling, multithreading, file I/O, and JDBC connectivity.",
+      "Developed real-world Java applications using core and advanced Java features.",
     ],
   },
 ];
@@ -187,29 +168,29 @@ const testimonials: TTestimonial[] = [
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
+  // {
+  //   testimonial:
+  //     "I've never met a web developer who truly cares about their clients' success like Rick does.",
+  //   name: "Chris Brown",
+  //   designation: "COO",
+  //   company: "DEF Corp",
+  //   image: "https://randomuser.me/api/portraits/men/5.jpg",
+  // },
+  // {
+  //   testimonial:
+  //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+  //   name: "Lisa Wang",
+  //   designation: "CTO",
+  //   company: "456 Enterprises",
+  //   image: "https://randomuser.me/api/portraits/women/6.jpg",
+  // },
 ];
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "E-commerce Application",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Developed a fully functional e-commerce platform with customer login and secure checkout.",
     tags: [
       {
         name: "react",
@@ -220,55 +201,94 @@ const projects: TProject[] = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "docker",
         color: "pink-text-gradient",
       },
-    ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "jenkins",
+        color: "yellow-text-gradient",
       },
     ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
+    image: ecom, // Replace with the relevant image
+    sourceCodeLink: "https://github.com/nihalsingh571/E-comm-MERN",
   },
   {
-    name: "Trip Guide",
+    name: "Fitness Tracker Website",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Designed a website to track calories and personalized workout plans.",
     tags: [
       {
-        name: "nextjs",
+        name: "html",
         color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
       },
       {
         name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
         color: "pink-text-gradient",
       },
+      {
+        name: "mongodb",
+        color: "red-text-gradient",
+      },
     ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    image: cal, // Replace with the relevant image
+    sourceCodeLink: "https://github.com/nihalsingh571/fitness-with-diet-",
+  },
+  {
+    name: "Shopping E-commerce Web",
+    description:
+      "Developed a fully functional e-commerce platform with product listings and user features.",
+    tags: [
+      {
+        name: "php",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "html",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "css",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: shop, // Replace with the relevant image
+    sourceCodeLink: "https://github.com/nihalsingh571/E-comm-MERN",
+  },
+  {
+    name: "Sudoku Solver",
+    description:
+      "Built a Sudoku solving application and implemented Jenkins and Docker for an optimized CI/CD workflow.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "html",
+        color: "green-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "jenkins",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: web, // Replace with the relevant image
+    sourceCodeLink: "https://github.com/nihalsingh571/sudokusolver",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+
+// Exporting constants
+export { services, technologies, certifications, testimonials, projects };

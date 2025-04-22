@@ -37,32 +37,30 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-      .send(
-        emailjsConfig.serviceId,
-        emailjsConfig.templateId,
-        {
-          form_name: form.name,
-          to_name: config.html.fullName,
-          from_email: form.email,
-          to_email: config.html.email,
-          message: form.message,
-        },
-        emailjsConfig.accessToken
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm(INITIAL_STATE);
-        },
-        (error) => {
-          setLoading(false);
-
-          console.log(error);
-          alert("Something went wrong.");
-        }
-      );
+  .send(
+    emailjsConfig.serviceId,
+    emailjsConfig.templateId,
+    {
+      form_name: form.name,
+      from_email: form.email,
+      to_name: "Nihal",
+      to_email: "nihalsinghwithroman@gmail.com",
+      message: form.message,
+    },
+    emailjsConfig.accessToken
+  )
+  .then(
+    () => {
+      setLoading(false);
+      alert("Thank you. I will get back to you as soon as possible.");
+      setForm(INITIAL_STATE);
+    },
+    (error) => {
+      setLoading(false);
+      console.error(error);
+      alert("Something went wrong.");
+    }
+  );
   };
 
   return (

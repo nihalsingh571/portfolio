@@ -3,13 +3,21 @@ export type TCommonProps = {
   name?: string;
   icon?: string;
 };
-
-export type TExperience = {
-  companyName: string;
-  iconBg: string;
+export type TCertification = {
+  title: string;
+  provider: string;
   date: string;
   points: string[];
-} & Required<Omit<TCommonProps, "name">>;
+};
+
+
+
+// export type TExperience = {
+//   companyName: string;
+//   iconBg: string;
+//   date: string;
+//   points: string[];
+// } & Required<Omit<TCommonProps, "name">>;
 
 export type TTestimonial = {
   testimonial: string;

@@ -40,13 +40,13 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Nihal kumar singh",
+    fullName: "Nihal",
+    email: "nihalsinghwithroman@gmail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Nihal kumar singh",
+    p: ["I develop creative visuals, user", "interfaces and web applications"],
   },
   contact: {
     p: "Get in touch",
@@ -67,15 +67,14 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `I am an aspiring Software Developer and being a developer brings you many challenges and different view to see the teach world like each function and working of any technology that makes you think how they have developed this unique updates.
+I'm also learning Devops so that to understand how the team work is envolved and all the working process behind the development and being in efficient using AI in development. 
+I have worked on many levels problem of DSA using Java to be efficient in algorithm and problem solving. 
+In web development I'm proficient in React. js for the frontend development and for the backend I have learnt MongoDB, SQL.`,
     },
     experience: {
       p: "What I have done so far",
-      h2: "Work Experience.",
+      h2: "Certifications",
     },
     feedbacks: {
       p: "What others say",
