@@ -21,6 +21,19 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+// New tech icons
+import java from "./tech/java.png";
+import python from "./tech/python.png";
+import sql from "./tech/sql.png";
+import express from "./tech/express.png";
+import django from "./tech/django.png";
+import postgresql from "./tech/postgresql.png";
+import aws from "./tech/aws.png";
+import kubernetes from "./tech/kubernetes.png";
+import jenkins from "./tech/jenkins.png";
+import linux from "./tech/linux.png";
+import redis from "./tech/redis.png";
+
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -35,6 +48,7 @@ import tripguide from "./tripguide.png";
 import propsync from "./propsync.png";
 import internship from "./internship.png";
 import resumeintel from "./resumeintel.png";
+import resumeats from "./resumeats.png";
 
 export {
   logo,
@@ -58,6 +72,17 @@ export {
   tailwind,
   typescript,
   threejs,
+  java,
+  python,
+  sql,
+  express,
+  django,
+  postgresql,
+  aws,
+  kubernetes,
+  jenkins,
+  linux,
+  redis,
   meta,
   shopify,
   starbucks,
@@ -71,4 +96,5 @@ export {
   propsync,
   internship,
   resumeintel,
+  resumeats,
 };

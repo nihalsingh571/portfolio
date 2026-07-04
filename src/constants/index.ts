@@ -38,6 +38,18 @@ import {
   propsync,
   internship,
   resumeintel,
+  resumeats,
+  java,
+  python,
+  sql,
+  express,
+  django,
+  postgresql,
+  aws,
+  kubernetes,
+  jenkins,
+  linux,
+  redis,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -75,13 +87,10 @@ const services: TService[] = [
 ];
 
 const technologies: TTechnology[] = [
+  // Languages
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
+    name: "Java",
+    icon: java,
   },
   {
     name: "JavaScript",
@@ -90,6 +99,23 @@ const technologies: TTechnology[] = [
   {
     name: "TypeScript",
     icon: typescript,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "SQL",
+    icon: sql,
+  },
+  // Frontend
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
   },
   {
     name: "React JS",
@@ -103,29 +129,63 @@ const technologies: TTechnology[] = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
+  // Backend
   {
     name: "Node JS",
     icon: nodejs,
+  },
+  {
+    name: "Express.js",
+    icon: express,
+  },
+  {
+    name: "Django",
+    icon: django,
   },
   {
     name: "MongoDB",
     icon: mongodb,
   },
   {
+    name: "PostgreSQL",
+    icon: postgresql,
+  },
+  {
+    name: "Redis",
+    icon: redis,
+  },
+  // DevOps & Cloud
+  {
+    name: "AWS",
+    icon: aws,
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "Kubernetes",
+    icon: kubernetes,
+  },
+  {
+    name: "Jenkins",
+    icon: jenkins,
+  },
+  {
+    name: "Linux",
+    icon: linux,
+  },
+  {
+    name: "Git",
+    icon: git,
+  },
+  {
     name: "Three JS",
     icon: threejs,
   },
   {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
+    name: "Figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
@@ -171,125 +231,10 @@ const testimonials: TTestimonial[] = [
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
-  // {
-  //   testimonial:
-  //     "I've never met a web developer who truly cares about their clients' success like Rick does.",
-  //   name: "Chris Brown",
-  //   designation: "COO",
-  //   company: "DEF Corp",
-  //   image: "https://randomuser.me/api/portraits/men/5.jpg",
-  // },
-  // {
-  //   testimonial:
-  //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-  //   name: "Lisa Wang",
-  //   designation: "CTO",
-  //   company: "456 Enterprises",
-  //   image: "https://randomuser.me/api/portraits/women/6.jpg",
-  // },
 ];
 
 const projects: TProject[] = [
-  {
-    name: "E-commerce Application",
-    description:
-      "Developed a fully functional e-commerce platform with customer login and secure checkout.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "docker",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "jenkins",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: ecom, // Replace with the relevant image
-    sourceCodeLink: "https://github.com/nihalsingh571/E-comm-MERN",
-  },
-  {
-    name: "Fitness Tracker Website",
-    description:
-      "Designed a website to track calories and personalized workout plans.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "red-text-gradient",
-      },
-    ],
-    image: cal, // Replace with the relevant image
-    sourceCodeLink: "https://github.com/nihalsingh571/fitness-with-diet-",
-  },
-  {
-    name: "Shopping E-commerce Web",
-    description:
-      "Developed a fully functional e-commerce platform with product listings and user features.",
-    tags: [
-      {
-        name: "php",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mysql",
-        color: "green-text-gradient",
-      },
-      {
-        name: "html",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "css",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: shop, // Replace with the relevant image
-    sourceCodeLink: "https://github.com/nihalsingh571/E-comm-MERN",
-  },
-  {
-    name: "Sudoku Solver",
-    description:
-      "Built a Sudoku solving application and implemented Jenkins and Docker for an optimized CI/CD workflow.",
-    tags: [
-      {
-        name: "javascript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "docker",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "jenkins",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: web, // Replace with the relevant image
-    sourceCodeLink: "https://github.com/nihalsingh571/sudokusolver",
-  },
+  // ── Top 3 featured projects ──────────────────────────────────────────────
   {
     name: "PropSync",
     description:
@@ -376,6 +321,137 @@ const projects: TProject[] = [
     image: resumeintel,
     sourceCodeLink: "https://github.com/nihalsingh571/ResumeIntelligence",
     period: "Jan 2025 – Feb 2025",
+  },
+  // ── #4 ResumeATS ─────────────────────────────────────────────────────────
+  {
+    name: "ResumeATS — AI Resume Tailoring Platform",
+    description:
+      "AI platform that analyzes job descriptions for key skills & requirements, ranks your projects by JD relevance, rewrites bullets using only facts from your resume (zero hallucinations), reorders skills, and generates a tailored DOCX/PDF with a detailed ATS Score Dashboard.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "openai",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "python",
+        color: "red-text-gradient",
+      },
+    ],
+    image: resumeats,
+    sourceCodeLink: "https://github.com/nihalsingh571/ResumeATS",
+  },
+  // ── Older projects ────────────────────────────────────────────────────────
+  {
+    name: "E-commerce Application",
+    description:
+      "Developed a fully functional e-commerce platform with customer login and secure checkout.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "jenkins",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: ecom,
+    sourceCodeLink: "https://github.com/nihalsingh571/E-comm-MERN",
+  },
+  {
+    name: "Fitness Tracker Website",
+    description:
+      "Designed a website to track calories and personalized workout plans.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "red-text-gradient",
+      },
+    ],
+    image: cal,
+    sourceCodeLink: "https://github.com/nihalsingh571/fitness-with-diet-",
+  },
+  {
+    name: "Shopping E-commerce Web",
+    description:
+      "Developed a fully functional e-commerce platform with product listings and user features.",
+    tags: [
+      {
+        name: "php",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "html",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "css",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: shop,
+    sourceCodeLink: "https://github.com/nihalsingh571/E-comm-MERN",
+  },
+  {
+    name: "Sudoku Solver",
+    description:
+      "Built a Sudoku solving application and implemented Jenkins and Docker for an optimized CI/CD workflow.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "html",
+        color: "green-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "jenkins",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: web,
+    sourceCodeLink: "https://github.com/nihalsingh571/sudokusolver",
   },
 ];
 
