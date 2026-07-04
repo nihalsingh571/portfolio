@@ -21,18 +21,18 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-// New tech icons
-import java from "./tech/java.png";
-import python from "./tech/python.png";
-import sql from "./tech/sql.png";
-import express from "./tech/express.png";
-import django from "./tech/django.png";
-import postgresql from "./tech/postgresql.png";
-import aws from "./tech/aws.png";
-import kubernetes from "./tech/kubernetes.png";
-import jenkins from "./tech/jenkins.png";
-import linux from "./tech/linux.png";
-import redis from "./tech/redis.png";
+// New tech icons (SVG)
+import java from "./tech/java.svg";
+import python from "./tech/python.svg";
+import sql from "./tech/sql.svg";
+import express from "./tech/express.svg";
+import django from "./tech/django.svg";
+import postgresql from "./tech/postgresql.svg";
+import aws from "./tech/aws.svg";
+import kubernetes from "./tech/kubernetes.svg";
+import jenkins from "./tech/jenkins.svg";
+import linux from "./tech/linux.svg";
+import redis from "./tech/redis.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";

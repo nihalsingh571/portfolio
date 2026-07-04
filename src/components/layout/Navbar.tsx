@@ -6,6 +6,8 @@ import { navLinks } from "../../constants";
 import { logo, menu, close } from "../../assets";
 import { config } from "../../constants/config";
 
+const CV_PATH = "/resume/Nihal_Kumar_Singh_CV.pdf";
+
 const Navbar = () => {
   const [active, setActive] = useState<string | null>();
   const [toggle, setToggle] = useState(false);
@@ -70,7 +72,8 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className="hidden list-none flex-row gap-10 sm:flex">
+        {/* Desktop nav */}
+        <ul className="hidden list-none flex-row items-center gap-10 sm:flex">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -81,8 +84,34 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+
+          {/* CV Download button */}
+          <li>
+            <a
+              href={CV_PATH}
+              download="Nihal_Kumar_Singh_CV.pdf"
+              className="flex items-center gap-1.5 rounded-lg border border-[#915eff] bg-[#915eff]/10 px-4 py-1.5 text-[16px] font-semibold text-[#915eff] transition-all hover:bg-[#915eff] hover:text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-4 w-4"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              CV
+            </a>
+          </li>
         </ul>
 
+        {/* Mobile hamburger */}
         <div className="flex flex-1 items-center justify-end sm:hidden">
           <img
             src={toggle ? close : menu}
@@ -110,6 +139,32 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+
+              {/* CV Download button (mobile) */}
+              <li>
+                <a
+                  href={CV_PATH}
+                  download="Nihal_Kumar_Singh_CV.pdf"
+                  onClick={() => setToggle(false)}
+                  className="flex items-center gap-1.5 rounded-lg border border-[#915eff] px-3 py-1 text-[15px] font-semibold text-[#915eff]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-4 w-4"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                  CV
+                </a>
+              </li>
             </ul>
           </div>
         </div>
