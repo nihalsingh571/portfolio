@@ -15,8 +15,12 @@ const INITIAL_STATE = Object.fromEntries(
 const emailjsConfig = {
   serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
   templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-  accessToken: import.meta.env.VITE_EMAILJS_ACCESS_TOKEN,
+  publicKey: import.meta.env.VITE_EMAILJS_ACCESS_TOKEN,
 };
+
+// Initialize EmailJS once (required by @emailjs/browser v3+)
+// @ts-ignore — v3 accepts an options object; bundled .d.ts still shows string
+emailjs.init({ publicKey: emailjsConfig.publicKey });
 
 const Contact = () => {
   const formRef = useRef<React.LegacyRef<HTMLFormElement> | undefined>();
@@ -46,8 +50,8 @@ const Contact = () => {
       to_name: "Nihal",
       to_email: "nihalsinghwithroman@gmail.com",
       message: form.message,
-    },
-    emailjsConfig.accessToken
+    }
+    // publicKey already registered via emailjs.init() above
   )
   .then(
     () => {
