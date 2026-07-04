@@ -35,6 +35,9 @@ import {
   // jobit,
   // tripguide,
   threejs,
+  propsync,
+  internship,
+  resumeintel,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -286,6 +289,93 @@ const projects: TProject[] = [
     ],
     image: web, // Replace with the relevant image
     sourceCodeLink: "https://github.com/nihalsingh571/sudokusolver",
+  },
+  {
+    name: "PropSync",
+    description:
+      "Full-stack MERN property rental & maintenance platform with 4 role-based dashboards (Admin, Owner, Tenant, Maintenance Staff), 3-layer auth (JWT + 2FA + OTP), real-time Socket.IO notifications, and React Query performance optimizations. Deployed on Vercel + Render.",
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "green-text-gradient",
+      },
+      {
+        name: "node.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "socket.io",
+        color: "red-text-gradient",
+      },
+    ],
+    image: propsync,
+    sourceCodeLink: "https://github.com/nihalsingh571/PropSync",
+    deploymentLink: "https://prop-sync.vercel.app/",
+    period: "Jun 2026 – Jul 2026",
+  },
+  {
+    name: "Intelligent Internship Recommendation System",
+    description:
+      "End-to-end internship marketplace with 3 portals (student, recruiter, admin), a custom ML recommendation engine (Cosine Similarity + VSPS trust scoring), 68-test CI/CD suite, and cloud infrastructure on AWS EKS with HPA, Prometheus, and Grafana observability.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "kubernetes",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "aws-eks",
+        color: "red-text-gradient",
+      },
+    ],
+    image: internship,
+    sourceCodeLink: "https://github.com/nihalsingh571/Kubernetes",
+    period: "Oct 2025 – Apr 2026",
+  },
+  {
+    name: "AI Resume Intelligence System",
+    description:
+      "Desktop-based ATS system in Core Java with a custom NLP pipeline (tokenization, stop-word filtering, semantic analysis) and DSA-driven skill-frequency scoring engine that ranks resumes using a 5-factor relevance model.",
+    tags: [
+      {
+        name: "java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nlp",
+        color: "green-text-gradient",
+      },
+      {
+        name: "java-swing",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "dsa",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: resumeintel,
+    sourceCodeLink: "https://github.com/nihalsingh571/ResumeIntelligence",
+    period: "Jan 2025 – Feb 2025",
   },
 ];
 

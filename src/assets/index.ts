@@ -32,6 +32,9 @@ import cal from "./cal.png";
 import ecom from "./ecom.png";
 import shop from "./shop.png";
 import tripguide from "./tripguide.png";
+import propsync from "./propsync.png";
+import internship from "./internship.png";
+import resumeintel from "./resumeintel.png";
 
 export {
   logo,
@@ -65,4 +68,7 @@ export {
   cal,
   ecom,
   tripguide,
+  propsync,
+  internship,
+  resumeintel,
 };
