@@ -13,9 +13,9 @@ const INITIAL_STATE = Object.fromEntries(
 );
 
 const emailjsConfig = {
-  serviceId: "service_oc0yz3f",
-  templateId: "template_mmdpnh6",
-  publicKey: "lBiCXmN0YaNEtXaOP",
+  serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+  templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+  publicKey: import.meta.env.VITE_EMAILJS_ACCESS_TOKEN,
 };
 
 // Initialize EmailJS once (required by @emailjs/browser v3+)
